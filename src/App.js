@@ -7,7 +7,8 @@ function App() {
     <div className="app">
       <h1>Mern Application</h1>
 
-      <div className='app__videos'>
+      <div className="app__videos">
+        <Video />
         <Video />
         <Video />
         <Video />
