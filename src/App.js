@@ -8,7 +8,7 @@ function App() {
       <h1>Mern Application</h1>
 
       <div className="app__videos">
-        <Video />
+        <Video url={"/videos/coverr-lake-view-1572182181649.mp4"} />
         <Video />
         <Video />
         <Video />

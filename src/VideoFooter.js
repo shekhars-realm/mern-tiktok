@@ -3,19 +3,19 @@ import './VideoFooter.css'
 import MusicIcon from '@material-ui/icons/MusicNote'
 import Ticker from 'react-ticker'
 
-const VideoFooter = () => {
+const VideoFooter = ({channel, description, song}) => {
     return (
         <div className="videoFooter">
             <div className="videoFooter__text">
-                <h3>@username</h3>
-                <p>This is some description</p>
+                <h3>@{channel}</h3>
+                <p>{description}</p>
                 <div class="videoFooter__ticker">
                     <MusicIcon className="videoFooter_icon"/>
                     <Ticker mode='smooth'>
                         {
                             ({index}) => (
                                 <>
-                                    <p>I am a song</p>
+                                    <p>{song}</p>
                                 </>
                             )
                         }

@@ -3,7 +3,7 @@ import './Video.css'
 import VideoSidebar from './VideoSidebar';
 import VideoFooter from "./VideoFooter";
 
-function Video(props) {
+function Video({url}) {
     const videoRef = useRef(null)
     const [playing, setPlaying] = useState(false)
 
@@ -23,12 +23,12 @@ function Video(props) {
                 onClick={handleVideoPress}
                 className="video__player" 
                 ref={videoRef}
-                src="/videos/coverr-lake-view-1572182181649.mp4" 
+                src={url}
                 loop
             >
             </video>
             <VideoSidebar/>
-            <VideoFooter/>
+            <VideoFooter channel={'shekhar'} song={'7 years old'} description={'nature'} />
         </div>
     );
 }    
